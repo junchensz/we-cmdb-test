@@ -1,0 +1,72 @@
+{
+	"criteria": {
+		"name": "systemDesign",
+		"ciTypeId": 1,
+		"attrs": [2],
+		"children": [{
+			"name": "subsysDesign",
+			"ciTypeId": 2,
+			"attrs": [18],
+			"parentRs": {
+				"attrId": 31,
+				"isReferedFromParent": false
+			},
+			"attrKeyNames": ["subsysDesign$keyName"],
+			"children": [{
+				"name": "subsys",
+				"ciTypeId": 7,
+				"attrs": [108],
+				"parentRs": {
+					"attrId": 121,
+					"isReferedFromParent": true
+				},
+				"attrKeyNames": ["subsys$keyName"],
+				"children": [{
+					"name": "unit",
+					"ciTypeId": 8,
+					"attrs": [125],
+					"parentRs": {
+						"attrId": 138,
+						"isReferedFromParent": true
+					},
+					"attrKeyNames": ["unit$keyName"],
+					"children": [{
+						"name": "running_instance",
+						"ciTypeId": 15,
+						"attrs": [272],
+						"parentRs": {
+							"attrId": 285,
+							"isReferedFromParent": true
+						},
+						"attrKeyNames": ["runningInstance$keyName"],
+						"children": [{
+							"name": "host",
+							"ciTypeId": 12,
+							"attrs": [209],
+							"parentRs": {
+								"attrId": 286,
+								"isReferedFromParent": true
+							},
+							"attrKeyNames": ["host$keyName"]
+						}]
+					}]
+				}]
+			}]
+		}],
+		"attrKeyNames": ["sysDesign$keyName"]
+	},
+	"queryRequest": {
+		"paging": false,
+		"pageable": null,
+		"filterRs": null,
+		"filters": [],
+		"sorting": null,
+		"groupBys": [],
+		"refResources": [],
+		"resultColumns": null,
+		"dialect": {
+			"showCiHistory": false,
+			"data": null
+		}
+	}
+}
