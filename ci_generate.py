@@ -146,8 +146,8 @@ def writeNetworkSegment(startIndex,count):
 
 
 
-networkSegmentCount = 1000
-ipCountPerNetworkSeg = 50
+networkSegmentCount = 10
+ipCountPerNetworkSeg = 100
 ipCount = networkSegmentCount * ipCountPerNetworkSeg #host count is same
 
 writeNetworkSegment(1,networkSegmentCount)
@@ -157,8 +157,8 @@ for i in range(networkSegmentCount):
     writeIpAndHost(networkSegmentGuid,ipStart,ipCountPerNetworkSeg)
 
 systemDesignCount = 10
-subSystemDesignCountPerSystemDesign = 10
-unitCountPerSubsys = 3
+subSystemDesignCountPerSystemDesign = 5
+unitCountPerSubsys = 1
 unitCount = systemDesignCount * subSystemDesignCountPerSystemDesign * unitCountPerSubsys
 
 unitStart = 1
@@ -170,7 +170,7 @@ for i in range(systemDesignCount): # 0 -> 10
     systemDesign = genGuid(systemDesign_prefix,i+1)
     writeSubSystemDesigin(systemDesign,subSysDesignStart, subSystemDesignCountPerSystemDesign)
 
-    subsysPerSubsysDesign = 10
+    subsysPerSubsysDesign = 5
     for j in range(subSystemDesignCountPerSystemDesign): # 0 -> 10
         subsysDesign = genGuid(subsysDesign_prefix, subSysDesignStart + j)
         writeSubSystem(subsysDesign, subsysStart, subsysPerSubsysDesign)
