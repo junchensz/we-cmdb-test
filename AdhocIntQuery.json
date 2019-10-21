@@ -47,7 +47,28 @@
 								"attrId": 286,
 								"isReferedFromParent": true
 							},
-							"attrKeyNames": ["host$keyName"]
+							"attrKeyNames": ["host$keyName"],
+							"children": [{
+								"name": "ip",
+								"ciTypeId": 14,
+								"attrs": [255],
+								"parentRs": {
+									"attrId": 226,
+									"isReferedFromParent": true
+								},
+								"attrKeyNames": ["ip$keyName"],
+								"children": [{
+									"name": "network_segment",
+									"ciTypeId": 21,
+									"attrs": [393],
+									"parentRs": {
+										"attrId": 270,
+										"isReferedFromParent": true
+									},
+									"attrKeyNames": ["network_segment$keyName"]
+								}]
+								
+							}]
 						}]
 					}]
 				}]
